@@ -292,9 +292,6 @@ export function useAppHistory(): appHistoryReturn {
     if (toolboxApp === undefined || toolboxApp === false) {
       return;
     }
-    if (!toolboxApp.isV2) {
-      return dispatch({ type: "finished" });
-    }
   }, [toolboxApp]);
 
   useEffect(() => {
